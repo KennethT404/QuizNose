@@ -263,7 +263,8 @@ def send_async_email(app, msg):
         mail.send(msg)
 
 
-client = Client("at_zmz5m4BQ9kegkMqfGaTujPCCUD135")  ##whoisxmlapikey #(aws.get_ssm_param("/QUIZNOSE/API_KEY"))
+client = Client("at_zmz5m4BQ9kegkMqfGaTujPCCUD135")  ##whoisxmlapikey 
+#client = Client(aws.get_ssm_param("/QUIZNOSE/API_KEY"))
 
 htmlbody = """
 Your account on <b>QuizNose</b> Quiz App was successfully created.
